@@ -1,4 +1,4 @@
-# terraform-proxmox-lab
+# terraform-proxmox
 
 Terraform configurations built during study for the HashiCorp Terraform Associate (004) certification.
 
