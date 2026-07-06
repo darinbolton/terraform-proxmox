@@ -61,7 +61,7 @@ variable "template" {
 }
 
 variable "minio" {
-  type = string
+  type        = string
   description = "Minio S3 storage for Terraform"
-  default = "local:vztmpl/ubuntu-22.04-standard_22.04-1_"
+  default     = "local:vztmpl/ubuntu-22.04-standard_22.04-1_"
 }

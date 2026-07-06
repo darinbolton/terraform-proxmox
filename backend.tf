@@ -7,7 +7,7 @@ terraform {
     endpoints = {
       s3 = "http://192.168.0.39:9000"
     }
-    
+
     access_key = "terraform"
     secret_key = "terraform-state-secret"
 
@@ -15,6 +15,6 @@ terraform {
     skip_metadata_api_check     = true
     skip_region_validation      = true
     skip_requesting_account_id  = true
-    use_path_style            = true
+    use_path_style              = true
   }
 }

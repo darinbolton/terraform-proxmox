@@ -4,7 +4,7 @@ resource "proxmox_virtual_environment_container" "lab" {
   description = "Managed by Terraform | role: ${each.value.role} | env: ${var.environment}"
   node_name   = "pve"
   vm_id       = each.value.vmid
-  tags = concat(local.common_tags, ["role-${each.value.role}"])
+  tags        = concat(local.common_tags, ["role-${each.value.role}"])
 
   started = true
 
