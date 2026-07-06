@@ -1,0 +1,18 @@
+terraform {
+  backend "s3" {
+    bucket = "terraform-state"
+    key    = "proxmox/week2/terraform.tfstate"
+    region = "us-east-1"
+
+    endpoint = "http://192.168.0.39:9000"
+
+    access_key = "terraform"
+    secret_key = "terraform-state-secret"
+
+    skip_credentials_validation = true
+    skip_metadata_api_check     = true
+    skip_region_validation      = true
+    skip_requesting_account_id  = true
+    force_path_style            = true
+  }
+}
