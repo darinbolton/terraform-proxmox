@@ -42,6 +42,6 @@ resource "proxmox_virtual_environment_container" "lab" {
   }
 
   lifecycle {
-    ignore_changes = [tags]
+    ignore_changes = [tags,initialization[0].ip_config,operating_system[0].template_file_id]
   }
 }
